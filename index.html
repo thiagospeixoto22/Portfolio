@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thiago Peixoto — Portfolio</title>
+  <meta name="description" content="Personal portfolio of Thiago Peixoto: projects, coursework, and contact." />
+  <meta name="theme-color" content="#0ea5e9" />
+  <meta property="og:title" content="Thiago Peixoto — Portfolio" />
+  <meta property="og:description" content="Projects, coursework, and contact." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="assets/avatar.svg" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#"><span class="brand-mark" aria-hidden="true">∫</span><span class="brand-name">Thiago Peixoto</span></a>
+      <nav class="nav" aria-label="Primary">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#coursework">Coursework</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a class="btn btn-outline" href="/Users/thiagopeixoto/Desktop/Resume.pdf" download>Resume</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero container">
+      <img class="avatar" src="/Users/thiagopeixoto/Downloads/IMG_1530.PNG" 
+        width="112" height="112" alt="Portrait placeholder" />
+      <div class="hero-text">
+        <h1>Hi, I'm Thiago — CS Student & Aspiring Software Developer</h1>
+        <p class="lead">I build simple, reliable projects with Python, C++, HTML &amp; CSS. This page showcases a few favorites and the coursework behind them.</p>
+        <div class="cta">
+          <a class="btn" href="mailto:thiagospeixoto22@gmail.com" aria-label="Send me an email">Email me</a>
+          <a class="btn btn-outline" href="#projects">See projects</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <h2>About</h2>
+      <p>
+        Dedicated Computer Science major, deeply passionate about leveraging technology to solve complex problems and drive innovation.
+        Fluent in English and Portuguese and ready to tackle on any challenges that come my way.
+        With a passion for technology, I bring a fresh perspective to problem-solving. 
+        Currently completing Harvard CS50 and developing a few resume ready projects.
+        Let's connect to discuss how my diverse background and strong work ethic can add value to your team.
+      </p>
+    </section>
+
+    <section id="projects" class="section container">
+      <h2>Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <img src="/Users/thiagopeixoto/Desktop/Screenshot 2025-10-01 at 3.18.53 PM.png" alt="Screenshot placeholder for project" width="480" height="270" loading="lazy" />
+          <div class="card-body">
+            <h3>Investment Tracker</h3>
+            <p>Python tool that aggregates earnings call dates and links. CLI + simple web view.</p>
+            <ul class="tags">
+              <li>Python</li><li>APIs</li><li>CLI</li>
+            </ul>
+            <div class="links">
+              <a href="#" aria-label="View code on GitHub for Investment Tracker">Code</a>
+              <a href="#" aria-label="Open live demo of Investment Tracker">Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="/Users/thiagopeixoto/Desktop/Screenshot 2025-10-01 at 3.25.56 PM.png" alt="Screenshot placeholder for project" width="480" height="270" loading="lazy" />
+          <div class="card-body">
+            <h3>Portfolio Website</h3>
+            <p>This site—built with semantic HTML and modern CSS. Responsive and accessible.</p>
+            <ul class="tags">
+              <li>HTML</li><li>CSS</li><li>Accessibility</li>
+            </ul>
+            <div class="links">
+              <a href="https://gist.github.com/thiagospeixoto22/47c2023dbbe7cb6afb98d3b8acf3da71">Code</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="coursework" class="section container">
+      <h2>Relevant Coursework</h2>
+      <ul class="pill-list">
+        <li>Data Structures</li>
+        <li>Algorithms</li>
+        <li>Systems Programming</li>
+        <li>Web Development</li>
+        <li>Discrete Mathematics</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="section container">
+      <h2>Contact</h2>
+      <p>If any project sparks your interest, reach out I'd love to chat.</p>
+      <ul class="contact-list">
+        <li><a href="mailto:thiagospeixoto22@gmail.com">Email</a></li>
+        <li><a href="https://www.linkedin.com/in/thiago-peixoto-530932220/" rel="me">LinkedIn</a></li>
+        <li><a href="https://github.com/thiagospeixoto22">GitHub</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>Last updated October 01, 2025 · Built with HTML &amp; CSS · © <span id="year"></span> Thiago Peixoto</small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
