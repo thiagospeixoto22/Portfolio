@@ -46,7 +46,19 @@
         <h1>Hi, I'm Thiago — CS Student & Aspiring Software Developer</h1>
         <p class="lead">I build simple, reliable projects with Python, C++, HTML &amp; CSS. This page showcases a few favorites and the coursework behind them.</p>
         <div class="cta">
-          <a class="btn" href="mailto:thiagospeixoto22@gmail.com" aria-label="Send me an email">Email me</a>
+          <a
+            class="btn"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=thiagospeixoto22@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Email me
+          </a>
+
+          <button class="btn btn-outline" type="button" onclick="copyEmail()">
+            Copy email
+          </button>
+          <p id="copy-status" aria-live="polite"></p>
           <a class="btn btn-outline" href="#projects">See projects</a>
         </div>
       </div>
@@ -106,7 +118,7 @@
               <li>Python</li><li>API</li><li>Excel</li>
             </ul>
             <div class="links">
-              <a href="GITHUBLINKGOESHEREWHENDONE">Code</a>
+              <a href="https://github.com/thiagospeixoto22/Portfolio">Code</a>
             </div>
           </div>
         </article>
@@ -129,7 +141,16 @@
       <h2>Contact</h2>
       <p>If any project sparks your interest, reach out I'd love to chat.</p>
       <ul class="contact-list">
-        <li><a href="mailto:thiagospeixoto22@gmail.com">Email</a></li>
+        <li>
+         <a
+           href="https://mail.google.com/mail/?view=cm&fs=1&to=thiagospeixoto22@gmail.com"
+           target="_blank"
+           rel="noopener noreferrer"
+         >
+          Email
+       </a>
+    </li>
+    <li>thiagospeixoto22@gmail.com</li>
         <li><a href="https://www.linkedin.com/in/thiagospeixoto/" rel="me">LinkedIn</a></li>
         <li><a href="https://github.com/thiagospeixoto22">GitHub</a></li>
       </ul>
@@ -145,5 +166,21 @@
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
+  <script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  function copyEmail() {
+    const email = 'thiagospeixoto22@gmail.com';
+    const status = document.getElementById('copy-status');
+
+    navigator.clipboard.writeText(email)
+      .then(() => {
+        status.textContent = 'Email copied: ' + email;
+      })
+      .catch(() => {
+        status.textContent = 'Email: ' + email;
+      });
+  }
+</script>
 </body>
 </html>
